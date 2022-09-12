@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atribustos</title>
+    <style>
+        .parrafo1{color: red;}
+    </style>
+</head>
+<!--
+    class= este atributo se utiliza para dar estilo atravez de ccs
+    
+    id= es un identificador unico que se utiliza para seleccionar el elemento desde JS y para hacer navegacion atravez de anclas
+    
+    title= es un atributo que ayuda a la accesibilidad mostrando una descripcion del elemento al que pertenece, aparece un mensaje en el tooltip
+    
+    data= 
+-->
+<body>
+    <header></header>
+    <main>
+        <p class="parrafo1"> Clases</p>
+        <p id="parrafo"> identificador atravez de ID</p>
+        <p title="este es un ejemplo del atributo title">titulos con tooltip</p>
+        <p id="parrafo2" data-ejemplo="datos de ejemplo">datos pasados en la etiqueta</p>
+
+        <script>
+         const p = document.getElementById('parrafo')
+         console.log(p.textContent)
+
+         const p2=document.getElementById('parrafo2')
+         console.log(p2.dataset.ejemplo)
+
+        </script>
+
+    </main>
+</body>
+</html>
